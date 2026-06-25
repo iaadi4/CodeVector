@@ -10,7 +10,9 @@
     "@neondatabase/serverless": "^1.1.0",
     "@prisma/adapter-neon": "^7.8.0",
     "@prisma/client": "^7.8.0",
-    "hono": "^4.12.27"
+    "@types/pg": "^8.20.0",
+    "hono": "^4.12.27",
+    "pg": "^8.22.0"
   },
   "devDependencies": {
     "prisma": "^7.8.0",
