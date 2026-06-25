@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ShoppingBag, Search, ChevronRight, Package, Cpu, Sparkles, AlertCircle, ShoppingCart } from 'lucide-react';
+import { ShoppingBag, Search, ChevronRight, Package, Sparkles, AlertCircle, ShoppingCart } from 'lucide-react';
 import { cn } from './lib/utils';
 
 // Constants
