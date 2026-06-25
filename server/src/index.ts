@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import { createPrisma } from './db'
 import { encodeCursor, decodeCursor } from './cursor'
 
@@ -7,6 +8,8 @@ type Bindings = {
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
+
+app.use('/*', cors())
 
 // GET /products?limit=20&category=Electronics&cursor=<token>
 app.get('/products', async (c) => {
